@@ -16,6 +16,10 @@ function PolygonJS(w, h) {
     engine.height = h;
     engine.ctx = e.getContext('2d');
     engine.canvas = e;
+  
+    engine.clear = () => {
+       this.ctx.clearRect(0, 0, this.width, this.height);
+    };
     
     //work with images
     engine.imageObject = function(options) {
