@@ -39,6 +39,8 @@ function PolygonJS(w, h) {
           
           obj.addImagePoint = function(name, x, y) {
             this.imagePoints[this.imagePoints.length] = [name, x, y];
+            
+              return this;
           };
           
           obj.getImagePointX = function(name) {
@@ -46,6 +48,8 @@ function PolygonJS(w, h) {
               if(this.imagePoints[i][0] == name) {
                 return this.x + this.imagePoints[i][1];
               };
+              
+                return this;
             };
           };
           
@@ -54,6 +58,7 @@ function PolygonJS(w, h) {
               if(this.imagePoints[i][0] == name) {
                 return this.y + this.imagePoints[i][2];
               };
+                return this;
             };
           };
           
@@ -66,6 +71,8 @@ function PolygonJS(w, h) {
                 };
               };
             };
+            
+            return this;
           };
           
           obj.renameImagePoint = function(name, newname) {
@@ -74,6 +81,7 @@ function PolygonJS(w, h) {
                 this.imagePoints[i][0] = newname;
               };
             };
+            return this;
           };
           
           obj.removeImagePoint = function(name) {
@@ -82,6 +90,7 @@ function PolygonJS(w, h) {
                 imagePoints.splice(imagePoints.indexOf(i), 1);
               };
             };
+            return this;    
           };
           
           obj.render = () => {
@@ -124,6 +133,8 @@ function PolygonJS(w, h) {
               };
               
             };
+            
+            return this;
           };
           
           obj.rotate = () => {
