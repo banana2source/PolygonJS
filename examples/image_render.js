@@ -17,4 +17,4 @@ function Update() {
       image.rotate();
 };
 
-//In my gameloop i use two functions - Start and Update
+//In my gameloop i use two functions - Start and Update, you can use another function
