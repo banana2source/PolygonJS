@@ -4,5 +4,6 @@
    
 ## Starter
 > var game = new PolgyonJS(canvas_width, canvas_height); //init engine 
+
 ## Work with images 
    In PolygonJS you can create a lot of different object, and work with it. 
