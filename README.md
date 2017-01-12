@@ -23,11 +23,11 @@
 
 ## Work with images 
    In PolygonJS you can create a lot of different object, and work with it.
->var game = new PolgyonJS(800, 600); //create engine
->var player = new game.imageObject({
->x: 0, y: 0,
->//w: 50, h: 50, - you mustn't get image width and height in options-object, than image will be created with original size
->src: 'imgs/img.png'
->});
->player.render();
+`var game = new PolgyonJS(800, 600); //create engine
+var player = new game.imageObject({
+x: 0, y: 0,
+//w: 50, h: 50, - you mustn't get image width and height in options-object, than image will be created with original size
+src: 'imgs/img.png'
+});
+player.render();`
    
